@@ -1,0 +1,3267 @@
+{
+  "firstLayout": "",
+  "gdVersion": {
+    "build": 98,
+    "major": 4,
+    "minor": 0,
+    "revision": 0
+  },
+  "properties": {
+    "adMobAppId": "",
+    "adaptGameResolutionAtRuntime": true,
+    "folderProject": false,
+    "linuxExecutableFilename": "",
+    "macExecutableFilename": "",
+    "orientation": "portrait",
+    "packageName": "cc.redseed.soulhunter",
+    "projectFile": "H:\\CasualGameDevs\\SoulHunterDowntown\\game.json",
+    "scaleMode": "linear",
+    "sizeOnStartupMode": "adaptWidth",
+    "useExternalSourceFiles": false,
+    "version": "1.0.0",
+    "winExecutableFilename": "",
+    "winExecutableIconFile": "",
+    "name": "Soul Hunter Downtown",
+    "author": "Ayush Raj",
+    "windowWidth": 720,
+    "windowHeight": 1280,
+    "latestCompilationDirectory": "",
+    "maxFPS": 60,
+    "minFPS": 30,
+    "verticalSync": false,
+    "platformSpecificAssets": {},
+    "loadingScreen": {
+      "showGDevelopSplash": true
+    },
+    "extensions": [
+      {
+        "name": "BuiltinObject"
+      },
+      {
+        "name": "BuiltinAudio"
+      },
+      {
+        "name": "BuiltinVariables"
+      },
+      {
+        "name": "BuiltinTime"
+      },
+      {
+        "name": "BuiltinMouse"
+      },
+      {
+        "name": "BuiltinKeyboard"
+      },
+      {
+        "name": "BuiltinJoystick"
+      },
+      {
+        "name": "BuiltinCamera"
+      },
+      {
+        "name": "BuiltinWindow"
+      },
+      {
+        "name": "BuiltinFile"
+      },
+      {
+        "name": "BuiltinNetwork"
+      },
+      {
+        "name": "BuiltinScene"
+      },
+      {
+        "name": "BuiltinAdvanced"
+      },
+      {
+        "name": "Sprite"
+      },
+      {
+        "name": "BuiltinCommonInstructions"
+      },
+      {
+        "name": "BuiltinCommonConversions"
+      },
+      {
+        "name": "BuiltinStringInstructions"
+      },
+      {
+        "name": "BuiltinMathematicalTools"
+      },
+      {
+        "name": "BuiltinExternalLayouts"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "GDevelop JS platform"
+      }
+    ],
+    "currentPlatform": "GDevelop JS platform"
+  },
+  "resources": {
+    "resources": [
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Free-Pixel-Art-Street-2D-Backgrounds/PNG/City2/Pale/City2_pale.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Free-Pixel-Art-Street-2D-Backgrounds\\PNG\\City2\\Pale\\City2_pale.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Free-Pixel-Art-Street-2D-Backgrounds/PNG/City2/Pale/Sky_pale.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Free-Pixel-Art-Street-2D-Backgrounds\\PNG\\City2\\Pale\\Sky_pale.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Free-Pixel-Art-Street-2D-Backgrounds/PNG/City2/Pale/Back_pale.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Free-Pixel-Art-Street-2D-Backgrounds\\PNG\\City2\\Pale\\Back_pale.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Free-Pixel-Art-Street-2D-Backgrounds/PNG/City2/Pale/Houses3_pale.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Free-Pixel-Art-Street-2D-Backgrounds\\PNG\\City2\\Pale\\Houses3_pale.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Free-Pixel-Art-Street-2D-Backgrounds/PNG/City2/Pale/houses1_pale.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Free-Pixel-Art-Street-2D-Backgrounds\\PNG\\City2\\Pale\\houses1_pale.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Free-Pixel-Art-Street-2D-Backgrounds/PNG/City2/Pale/minishop&callbox_pale.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Free-Pixel-Art-Street-2D-Backgrounds\\PNG\\City2\\Pale\\minishop&callbox_pale.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Free-Pixel-Art-Street-2D-Backgrounds/PNG/City2/Pale/road&lamps_pale.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Free-Pixel-Art-Street-2D-Backgrounds\\PNG\\City2\\Pale\\road&lamps_pale.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Idle__000.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Idle__000.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Idle__001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Idle__001.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Idle__002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Idle__002.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Idle__003.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Idle__003.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Idle__004.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Idle__004.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Idle__005.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Idle__005.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Idle__006.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Idle__006.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Idle__007.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Idle__007.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Idle__008.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Idle__008.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Idle__009.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Idle__009.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Jump__000.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Jump__000.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Jump__001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Jump__001.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Jump__002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Jump__002.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Jump__003.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Jump__003.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Jump__004.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Jump__004.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Jump__005.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Jump__005.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Jump__006.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Jump__006.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Jump__007.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Jump__007.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Jump__008.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Jump__008.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Jump__009.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Jump__009.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Throw__000.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Throw__000.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Throw__001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Throw__001.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Throw__002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Throw__002.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Throw__003.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Throw__003.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Throw__004.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Throw__004.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Throw__005.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Throw__005.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Throw__006.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Throw__006.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Throw__007.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Throw__007.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Throw__008.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Throw__008.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Throw__009.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Throw__009.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Jump_Throw__000.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Jump_Throw__000.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Jump_Throw__001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Jump_Throw__001.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Jump_Throw__002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Jump_Throw__002.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Jump_Throw__003.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Jump_Throw__003.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Jump_Throw__004.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Jump_Throw__004.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Jump_Throw__005.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Jump_Throw__005.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Jump_Throw__006.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Jump_Throw__006.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Jump_Throw__007.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Jump_Throw__007.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Jump_Throw__008.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Jump_Throw__008.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Jump_Throw__009.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Jump_Throw__009.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Dead__000.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Dead__000.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Dead__001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Dead__001.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Dead__002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Dead__002.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Dead__003.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Dead__003.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Dead__004.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Dead__004.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Dead__005.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Dead__005.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Dead__006.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Dead__006.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Dead__007.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Dead__007.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Dead__008.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Dead__008.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/ninjagirlnew/png/Dead__009.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\ninjagirlnew\\png\\Dead__009.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewFile-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewFile-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewFile-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewFile-1-0.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Idle-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Idle-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Default-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Default-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Default-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Default-2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Default-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Default-3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Default-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Default-4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Default-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Default-1-0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Default-2-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Default-2-0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Default-3-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Default-3-0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Default-4-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Default-4-0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Idle-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Idle-1-0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Idle-1-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Idle-1-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Idle-1-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Idle-1-2.png",
+        "smoothed": true,
+        "userAdded": true
+      }
+    ],
+    "resourceFolders": []
+  },
+  "objects": [],
+  "objectsGroups": [],
+  "variables": [
+    {
+      "name": "CanFireBullet",
+      "value": "1"
+    },
+    {
+      "name": "BulletFiringCooldown",
+      "value": "0.8"
+    },
+    {
+      "name": "TotalNumberOfGhostsOnScreen",
+      "value": "3"
+    },
+    {
+      "name": "Points",
+      "value": "0"
+    },
+    {
+      "name": "Coins",
+      "value": "10"
+    },
+    {
+      "name": "AttackPower",
+      "value": "1"
+    }
+  ],
+  "layouts": [
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "Stage_321",
+      "name": "Stage 1",
+      "oglFOV": 90,
+      "oglZFar": 500,
+      "oglZNear": 1,
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": false,
+        "gridB": 255,
+        "gridG": 180,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridR": 158,
+        "gridWidth": 32,
+        "snap": true,
+        "windowMask": false,
+        "zoomFactor": 0.298
+      },
+      "objectsGroups": [],
+      "variables": [
+        {
+          "name": "NumberOfGhostsOnScreen",
+          "value": "0"
+        },
+        {
+          "name": "ScenePoints",
+          "value": "0"
+        },
+        {
+          "name": "SceneCoins",
+          "value": "0"
+        }
+      ],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 1080,
+          "layer": "",
+          "locked": false,
+          "name": "SkyBackground",
+          "width": 1920,
+          "x": -565,
+          "y": -5,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 1080,
+          "layer": "",
+          "locked": false,
+          "name": "CityBackground2",
+          "width": 1916,
+          "x": -565,
+          "y": 183,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "CityForeground1",
+          "width": 0,
+          "x": -544,
+          "y": 341,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "CityForeground2",
+          "width": 0,
+          "x": -566,
+          "y": 261,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "CityForeground3",
+          "width": 0,
+          "x": -464,
+          "y": 243,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "CityForeground4",
+          "width": 0,
+          "x": -566,
+          "y": 204,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 101,
+          "layer": "",
+          "locked": false,
+          "name": "Platform2",
+          "width": 722,
+          "x": -1,
+          "y": 1184,
+          "zOrder": -9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 213,
+          "layer": "",
+          "locked": false,
+          "name": "NinjaGirl",
+          "width": 113,
+          "x": 30,
+          "y": 970,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "height": 1080,
+          "name": "CityBackground1",
+          "tags": "",
+          "texture": "Assets\\Free-Pixel-Art-Street-2D-Backgrounds\\PNG\\City2\\Pale\\City2_pale.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 1920,
+          "variables": [],
+          "behaviors": []
+        },
+        {
+          "height": 1080,
+          "name": "SkyBackground",
+          "tags": "",
+          "texture": "Assets\\Free-Pixel-Art-Street-2D-Backgrounds\\PNG\\City2\\Pale\\Sky_pale.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 1920,
+          "variables": [],
+          "behaviors": []
+        },
+        {
+          "height": 1080,
+          "name": "CityBackground2",
+          "tags": "",
+          "texture": "Assets\\Free-Pixel-Art-Street-2D-Backgrounds\\PNG\\City2\\Pale\\Back_pale.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 1920,
+          "variables": [],
+          "behaviors": []
+        },
+        {
+          "height": 1080,
+          "name": "CityForeground1",
+          "tags": "",
+          "texture": "Assets\\Free-Pixel-Art-Street-2D-Backgrounds\\PNG\\City2\\Pale\\Houses3_pale.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 1920,
+          "variables": [],
+          "behaviors": []
+        },
+        {
+          "height": 1080,
+          "name": "CityForeground2",
+          "tags": "",
+          "texture": "Assets\\Free-Pixel-Art-Street-2D-Backgrounds\\PNG\\City2\\Pale\\houses1_pale.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 1920,
+          "variables": [],
+          "behaviors": []
+        },
+        {
+          "height": 1080,
+          "name": "CityForeground3",
+          "tags": "",
+          "texture": "Assets\\Free-Pixel-Art-Street-2D-Backgrounds\\PNG\\City2\\Pale\\minishop&callbox_pale.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 1920,
+          "variables": [],
+          "behaviors": []
+        },
+        {
+          "height": 1080,
+          "name": "CityForeground4",
+          "tags": "",
+          "texture": "Assets\\Free-Pixel-Art-Street-2D-Backgrounds\\PNG\\City2\\Pale\\road&lamps_pale.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 1920,
+          "variables": [],
+          "behaviors": []
+        },
+        {
+          "name": "NinjaGirl",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "PlatformerObject",
+              "type": "PlatformBehavior::PlatformerObjectBehavior",
+              "jumpSpeed": 1200,
+              "acceleration": 1500,
+              "canGrabPlatforms": false,
+              "deceleration": 1500,
+              "gravity": 1000,
+              "ignoreDefaultControls": false,
+              "jumpSustainTime": 0.2,
+              "maxFallingSpeed": 700,
+              "maxSpeed": 250,
+              "roundCoordinates": true,
+              "slopeMaxAngle": 60,
+              "xGrabTolerance": 10,
+              "yGrabOffset": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "Idle",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.033,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Idle__000.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Idle__001.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Idle__002.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Idle__003.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Idle__004.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Idle__005.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Idle__006.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Idle__007.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Idle__008.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Idle__009.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Jump",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.033,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Jump__000.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Jump__001.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Jump__002.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Jump__003.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Jump__004.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Jump__005.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Jump__006.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Jump__007.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Jump__008.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Jump__009.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Throw",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.033,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Throw__000.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Throw__001.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Throw__002.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Throw__003.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Throw__004.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Throw__005.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Throw__006.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Throw__007.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Throw__008.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Throw__009.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "JumpThrow",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.033,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Jump_Throw__000.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Jump_Throw__001.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Jump_Throw__002.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Jump_Throw__003.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Jump_Throw__004.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Jump_Throw__005.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Jump_Throw__006.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Jump_Throw__007.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Jump_Throw__008.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Jump_Throw__009.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Dead",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.033,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Dead__000.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Dead__001.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Dead__002.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Dead__003.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Dead__004.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Dead__005.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Dead__006.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Dead__007.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Dead__008.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Dead__009.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "IdleJump",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\ninjagirlnew\\png\\Jump__009.png",
+                      "points": [
+                        {
+                          "name": "Fire",
+                          "x": 291.5,
+                          "y": 256
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "height": 32,
+          "name": "Platform",
+          "tags": "",
+          "texture": "NewFile-1.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "behaviors": []
+        },
+        {
+          "height": 32,
+          "name": "Platform2",
+          "tags": "",
+          "texture": "NewFile-1-0.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "Platform",
+              "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": false,
+              "platformType": "NormalPlatform",
+              "yGrabOffset": 0
+            }
+          ]
+        },
+        {
+          "name": "Ghost_Orb_White",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "name": "Health",
+              "value": "1"
+            },
+            {
+              "name": "Points",
+              "value": "10"
+            },
+            {
+              "name": "Coins",
+              "value": "1"
+            }
+          ],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Idle",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Idle-1-2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bullet",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "DestroyOutside",
+              "type": "DestroyOutsideBehavior::DestroyOutside",
+              "extraBorder": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "Default",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Default-1-0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Default-2-0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Default-3-0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Default-4-0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlatformBehavior::IgnoreDefaultControls"
+              },
+              "parameters": [
+                "NinjaGirl",
+                "PlatformerObject",
+                "yes"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"GhostSpawnTimer\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "PopEndedTouch"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlatformBehavior::SimulateJumpKey"
+              },
+              "parameters": [
+                "NinjaGirl",
+                "PlatformerObject"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "NinjaGirl",
+                "\"Jump\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonReleased"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlatformBehavior::SimulateJumpKey"
+              },
+              "parameters": [
+                "NinjaGirl",
+                "PlatformerObject"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "NinjaGirl",
+                "\"Jump\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlatformBehavior::IsOnFloor"
+              },
+              "parameters": [
+                "NinjaGirl",
+                "PlatformerObject"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "MouseButtonReleased"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "PopEndedTouch"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "MouseButtonReleased"
+              },
+              "parameters": [
+                "",
+                "Right"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "AnimationName"
+              },
+              "parameters": [
+                "NinjaGirl",
+                "\"Throw\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "NinjaGirl",
+                "\"Idle\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlatformBehavior::IsOnFloor"
+              },
+              "parameters": [
+                "NinjaGirl",
+                "PlatformerObject"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "AnimationEnded"
+              },
+              "parameters": [
+                "NinjaGirl"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "NinjaGirl",
+                "\"Idle\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "PlatformBehavior::IsOnFloor"
+              },
+              "parameters": [
+                "NinjaGirl",
+                "PlatformerObject"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "AnimationEnded"
+              },
+              "parameters": [
+                "NinjaGirl"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "NinjaGirl",
+                "\"IdleJump\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonReleased"
+              },
+              "parameters": [
+                "",
+                "Right"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlatformBehavior::IsOnFloor"
+              },
+              "parameters": [
+                "NinjaGirl",
+                "PlatformerObject"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "CanFireBullet",
+                "=",
+                "1"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Bullet",
+                "NinjaGirl.PointX(\"Fire\")",
+                "NinjaGirl.PointY(\"Fire\")",
+                "\"Spawn Layer\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "AddForceXY"
+              },
+              "parameters": [
+                "Bullet",
+                "1000",
+                "0",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "NinjaGirl",
+                "\"Throw\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "CanFireBullet",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"BulletFiringTimer\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonReleased"
+              },
+              "parameters": [
+                "",
+                "Right"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "PlatformBehavior::IsOnFloor"
+              },
+              "parameters": [
+                "NinjaGirl",
+                "PlatformerObject"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "CanFireBullet",
+                "=",
+                "1"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Bullet",
+                "NinjaGirl.PointX(\"Fire\")",
+                "NinjaGirl.PointY(\"Fire\")",
+                "\"Spawn Layer\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "AddForceXY"
+              },
+              "parameters": [
+                "Bullet",
+                "1000",
+                "0",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "NinjaGirl",
+                "\"JumpThrow\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "CanFireBullet",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"BulletFiringTimer\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Timer"
+              },
+              "parameters": [
+                "",
+                "GlobalVariable(BulletFiringCooldown)",
+                "\"BulletFiringTimer\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "CanFireBullet",
+                "=",
+                "1"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Timer"
+              },
+              "parameters": [
+                "",
+                "Random(10)",
+                "\"GhostSpawnTimer\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarScene"
+              },
+              "parameters": [
+                "NumberOfGhostsOnScreen",
+                "<",
+                "GlobalVariable(TotalNumberOfGhostsOnScreen)"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Ghost_Orb_White",
+                "1400",
+                "Random(6)*100+500",
+                "\"Spawn Layer\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "AddForceXY"
+              },
+              "parameters": [
+                "Ghost_Orb_White",
+                "-600",
+                "0",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "NumberOfGhostsOnScreen",
+                "+",
+                "1"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Timer"
+              },
+              "parameters": [
+                "",
+                "5",
+                "\"GhostSpawnTimer\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"GhostSpawnTimer\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "PosX"
+              },
+              "parameters": [
+                "Ghost_Orb_White",
+                "<=",
+                "-100"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Delete"
+              },
+              "parameters": [
+                "Ghost_Orb_White",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "NumberOfGhostsOnScreen",
+                "-",
+                "1"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Ghost_Orb_White",
+                "Bullet",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Delete"
+              },
+              "parameters": [
+                "Bullet",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "Ghost_Orb_White",
+                "Health",
+                "-",
+                "GlobalVariable(AttackPower)"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarObjet"
+              },
+              "parameters": [
+                "Ghost_Orb_White",
+                "Health",
+                "<=",
+                "0"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Delete"
+              },
+              "parameters": [
+                "Ghost_Orb_White",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "NumberOfGhostsOnScreen",
+                "-",
+                "1"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        }
+      ],
+      "layers": [
+        {
+          "name": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        },
+        {
+          "name": "Spawn Layer",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "Platform",
+          "type": "PlatformBehavior::PlatformBehavior"
+        },
+        {
+          "name": "PlatformerObject",
+          "type": "PlatformBehavior::PlatformerObjectBehavior"
+        }
+      ]
+    }
+  ],
+  "externalEvents": [],
+  "eventsFunctionsExtensions": [],
+  "externalLayouts": [],
+  "externalSourceFiles": []
+}
