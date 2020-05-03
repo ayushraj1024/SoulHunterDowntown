@@ -14,7 +14,7 @@
     "macExecutableFilename": "",
     "orientation": "portrait",
     "packageName": "cc.redseed.soulhunter",
-    "projectFile": "H:\\CasualGameDevs\\SoulHunterDowntown\\game.json",
+    "projectFile": "H:\\CasualGameDevs\\SoulHunterDowntownRepo\\game.json",
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
@@ -752,7 +752,7 @@
     },
     {
       "name": "BulletFiringCooldown",
-      "value": "0.8"
+      "value": "0.5"
     },
     {
       "name": "TotalNumberOfGhostsOnScreen",
@@ -768,6 +768,26 @@
     },
     {
       "name": "AttackPower",
+      "value": "1"
+    },
+    {
+      "name": "GhostSpawnXPosition",
+      "value": "1400"
+    },
+    {
+      "name": "GhostSpawnYPositionOffset",
+      "value": "400"
+    },
+    {
+      "name": "Health",
+      "value": "100"
+    },
+    {
+      "name": "DamageCooldown",
+      "value": "1"
+    },
+    {
+      "name": "CanBeDamaged",
       "value": "1"
     }
   ],
@@ -930,6 +950,21 @@
           "x": 30,
           "y": 970,
           "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "HealthText",
+          "width": 0,
+          "x": 24,
+          "y": 12,
+          "zOrder": 10,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2324,6 +2359,10 @@
             {
               "name": "Coins",
               "value": "1"
+            },
+            {
+              "name": "AttackPower",
+              "value": "10"
             }
           ],
           "behaviors": [],
@@ -2454,6 +2493,25 @@
               ]
             }
           ]
+        },
+        {
+          "bold": true,
+          "italic": false,
+          "name": "HealthText",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "0",
+          "font": "",
+          "characterSize": 100,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
         }
       ],
       "events": [
@@ -2483,6 +2541,18 @@
               "parameters": [
                 "",
                 "\"GhostSpawnTimer\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "HealthText",
+                "=",
+                "GlobalVariableString(Health)"
               ],
               "subInstructions": []
             }
@@ -3016,8 +3086,8 @@
               "parameters": [
                 "",
                 "Ghost_Orb_White",
-                "1400",
-                "Random(6)*100+500",
+                "GlobalVariable(GhostSpawnXPosition)",
+                "Random(6)*100+GlobalVariable(GhostSpawnYPositionOffset)",
                 "\"Spawn Layer\""
               ],
               "subInstructions": []
@@ -3216,6 +3286,159 @@
                 "NumberOfGhostsOnScreen",
                 "-",
                 "1"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "NinjaGirl",
+                "Ghost_Orb_White",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "CanBeDamaged",
+                "=",
+                "1"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "Health",
+                "-",
+                "Ghost_Orb_White.Variable(AttackPower)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"DamageTimer\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "CanBeDamaged",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "NinjaGirl",
+                "\"IdleJump\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "AddForceXY"
+              },
+              "parameters": [
+                "NinjaGirl",
+                "0",
+                "-100000",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Opacity"
+              },
+              "parameters": [
+                "NinjaGirl",
+                "=",
+                "130"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Timer"
+              },
+              "parameters": [
+                "",
+                "GlobalVariable(DamageCooldown)",
+                "\"DamageTimer\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "CanBeDamaged",
+                "=",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Opacity"
+              },
+              "parameters": [
+                "NinjaGirl",
+                "=",
+                "255"
               ],
               "subInstructions": []
             }
