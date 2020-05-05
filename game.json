@@ -739,6 +739,132 @@
         "name": "Idle-1-2.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Default-1-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Default-1-1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Free-Pixel-Art-Street-2D-Backgrounds/PNG/City4/Bright/City4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Free-Pixel-Art-Street-2D-Backgrounds\\PNG\\City4\\Bright\\City4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Free-Pixel-Art-Street-2D-Backgrounds/PNG/City4/Bright/Sky.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Free-Pixel-Art-Street-2D-Backgrounds\\PNG\\City4\\Bright\\Sky.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Free-Pixel-Art-Street-2D-Backgrounds/PNG/City4/Bright/houses.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Free-Pixel-Art-Street-2D-Backgrounds\\PNG\\City4\\Bright\\houses.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Free-Pixel-Art-Street-2D-Backgrounds/PNG/City4/Bright/houses2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Free-Pixel-Art-Street-2D-Backgrounds\\PNG\\City4\\Bright\\houses2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Free-Pixel-Art-Street-2D-Backgrounds/PNG/City4/Bright/houses1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Free-Pixel-Art-Street-2D-Backgrounds\\PNG\\City4\\Bright\\houses1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Free-Pixel-Art-Street-2D-Backgrounds/PNG/City4/Bright/umbrella&policebox.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Free-Pixel-Art-Street-2D-Backgrounds\\PNG\\City4\\Bright\\umbrella&policebox.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Free-Pixel-Art-Street-2D-Backgrounds/PNG/City4/Bright/road.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Free-Pixel-Art-Street-2D-Backgrounds\\PNG\\City4\\Bright\\road.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Free-Pixel-Art-Street-2D-Backgrounds/PNG/City4/Bright/fountain&bush.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Free-Pixel-Art-Street-2D-Backgrounds\\PNG\\City4\\Bright\\fountain&bush.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewObject-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewObject-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewObject-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewObject-1-0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewObject-1-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewObject-1-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewObject-1-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewObject-1-2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewFile-1-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewFile-1-1.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -805,6 +931,14 @@
     {
       "name": "GameOverTextXPosition",
       "value": "50"
+    },
+    {
+      "name": "NumberOfGhostsOnScreen",
+      "value": "0"
+    },
+    {
+      "name": "MaximumZOrder",
+      "value": "10"
     }
   ],
   "layouts": [
@@ -832,7 +966,7 @@
         "gridWidth": 32,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 0.25
+        "zoomFactor": 0.226
       },
       "objectsGroups": [],
       "variables": [
@@ -3298,7 +3432,7 @@
             {
               "type": {
                 "inverted": false,
-                "value": "VarScene"
+                "value": "VarGlobal"
               },
               "parameters": [
                 "NumberOfGhostsOnScreen",
@@ -3339,7 +3473,7 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ModVarScene"
+                "value": "ModVarGlobal"
               },
               "parameters": [
                 "NumberOfGhostsOnScreen",
@@ -3417,7 +3551,7 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ModVarScene"
+                "value": "ModVarGlobal"
               },
               "parameters": [
                 "NumberOfGhostsOnScreen",
@@ -3511,7 +3645,7 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ModVarScene"
+                "value": "ModVarGlobal"
               },
               "parameters": [
                 "NumberOfGhostsOnScreen",
@@ -3831,6 +3965,10 @@
       ],
       "behaviorsSharedData": [
         {
+          "name": "Ghost",
+          "type": "NewExtension::Ghost"
+        },
+        {
           "name": "Platform",
           "type": "PlatformBehavior::PlatformBehavior"
         },
@@ -3839,6 +3977,491 @@
           "type": "PlatformBehavior::PlatformerObjectBehavior"
         }
       ]
+    },
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "MainMenu",
+      "name": "MainMenu",
+      "oglFOV": 90,
+      "oglZFar": 500,
+      "oglZNear": 1,
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": false,
+        "gridB": 255,
+        "gridG": 180,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridR": 158,
+        "gridWidth": 32,
+        "snap": true,
+        "windowMask": false,
+        "zoomFactor": 0.28
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "MainMenuBackground",
+          "width": 0,
+          "x": -606,
+          "y": -7,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "MainMenuForeground1",
+          "width": 0,
+          "x": -658,
+          "y": 110,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "MainMenuForeground2",
+          "width": 0,
+          "x": -550,
+          "y": 200,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 1080,
+          "layer": "",
+          "locked": false,
+          "name": "MainMenuForeground3",
+          "width": 1176,
+          "x": -300,
+          "y": 139,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "MainMenuForeground4",
+          "width": 0,
+          "x": -1417,
+          "y": 164,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "MainMenuRoad",
+          "width": 0,
+          "x": -603,
+          "y": 202,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Title",
+          "width": 0,
+          "x": 73,
+          "y": 67,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "StartButton",
+          "width": 0,
+          "x": 102,
+          "y": 384,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "StartText",
+          "width": 0,
+          "x": 296,
+          "y": 471,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 1356,
+          "layer": "",
+          "locked": false,
+          "name": "TranslucentScreen",
+          "width": 797,
+          "x": -39,
+          "y": -18,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "height": 1080,
+          "name": "MainMenuBackground",
+          "tags": "",
+          "texture": "Assets\\Free-Pixel-Art-Street-2D-Backgrounds\\PNG\\City4\\Bright\\Sky.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 1920,
+          "variables": [],
+          "behaviors": []
+        },
+        {
+          "height": 1080,
+          "name": "MainMenuForeground1",
+          "tags": "",
+          "texture": "Assets\\Free-Pixel-Art-Street-2D-Backgrounds\\PNG\\City4\\Bright\\houses.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 1920,
+          "variables": [],
+          "behaviors": []
+        },
+        {
+          "height": 1080,
+          "name": "MainMenuForeground2",
+          "tags": "",
+          "texture": "Assets\\Free-Pixel-Art-Street-2D-Backgrounds\\PNG\\City4\\Bright\\houses2.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 1920,
+          "variables": [],
+          "behaviors": []
+        },
+        {
+          "height": 1080,
+          "name": "MainMenuForeground3",
+          "tags": "",
+          "texture": "Assets\\Free-Pixel-Art-Street-2D-Backgrounds\\PNG\\City4\\Bright\\houses1.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 1920,
+          "variables": [],
+          "behaviors": []
+        },
+        {
+          "height": 1080,
+          "name": "MainMenuForeground4",
+          "tags": "",
+          "texture": "Assets\\Free-Pixel-Art-Street-2D-Backgrounds\\PNG\\City4\\Bright\\umbrella&policebox.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 1920,
+          "variables": [],
+          "behaviors": []
+        },
+        {
+          "height": 1080,
+          "name": "MainMenuRoad",
+          "tags": "",
+          "texture": "Assets\\Free-Pixel-Art-Street-2D-Backgrounds\\PNG\\City4\\Bright\\road.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 1920,
+          "variables": [],
+          "behaviors": []
+        },
+        {
+          "height": 1080,
+          "name": "MainMenuFountain",
+          "tags": "",
+          "texture": "Assets\\Free-Pixel-Art-Street-2D-Backgrounds\\PNG\\City4\\Bright\\fountain&bush.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 1920,
+          "variables": [],
+          "behaviors": []
+        },
+        {
+          "bold": true,
+          "italic": false,
+          "name": "Title",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Soul Hunter\n Downtown",
+          "font": "",
+          "characterSize": 100,
+          "color": {
+            "b": 141,
+            "g": 203,
+            "r": 247
+          }
+        },
+        {
+          "additive": true,
+          "alphaParam": "Mutable",
+          "angleParam": "Mutable",
+          "blueParam": "Random",
+          "destroyWhenNoParticles": false,
+          "emissionEditionSimpleMode": true,
+          "emitterAngleA": 0,
+          "emitterAngleB": 180,
+          "emitterForceMax": 101,
+          "emitterForceMin": 45,
+          "emitterXDirection": 0,
+          "emitterYDirection": 1,
+          "emitterZDirection": 0,
+          "flow": 45,
+          "friction": 2,
+          "gravityEditionSimpleMode": true,
+          "greenParam": "Random",
+          "maxParticleNb": 300,
+          "name": "MainMenuParticles",
+          "particleAlpha1": 204,
+          "particleAlpha2": 204,
+          "particleAlphaRandomness1": 0,
+          "particleAlphaRandomness2": 0,
+          "particleAngle1": 0,
+          "particleAngle2": 0,
+          "particleAngleRandomness1": 0,
+          "particleAngleRandomness2": 0,
+          "particleBlue1": 28,
+          "particleBlue2": 0,
+          "particleEditionSimpleMode": true,
+          "particleGravityX": 0,
+          "particleGravityY": 2,
+          "particleGravityZ": 0,
+          "particleGreen1": 231,
+          "particleGreen2": 0,
+          "particleLifeTimeMax": 30,
+          "particleLifeTimeMin": 30,
+          "particleRed1": 248,
+          "particleRed2": 255,
+          "particleSize1": 100,
+          "particleSize2": 100,
+          "particleSizeRandomness1": 0,
+          "particleSizeRandomness2": 0,
+          "redParam": "Enabled",
+          "rendererParam1": 3,
+          "rendererParam2": 1,
+          "rendererType": "Point",
+          "sizeParam": "Mutable",
+          "tags": "",
+          "tank": -1,
+          "textureParticleName": "",
+          "type": "ParticleSystem::ParticleEmitter",
+          "zoneRadius": 3,
+          "variables": [],
+          "behaviors": []
+        },
+        {
+          "name": "StartButton",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "NewObject",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "NewObject-1-2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "bold": true,
+          "italic": false,
+          "name": "StartText",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Start",
+          "font": "",
+          "characterSize": 60,
+          "color": {
+            "b": 141,
+            "g": 203,
+            "r": 247
+          }
+        },
+        {
+          "height": 32,
+          "name": "TranslucentScreen",
+          "tags": "",
+          "texture": "NewFile-1-1.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "behaviors": []
+        }
+      ],
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "TiledSpriteObject::SetOpacity"
+              },
+              "parameters": [
+                "TranslucentScreen",
+                "=",
+                "130"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonReleased"
+              },
+              "parameters": [
+                "TranslucentScreen",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "CollisionPoint"
+              },
+              "parameters": [
+                "StartButton",
+                "MouseX(\"\", )",
+                "MouseY(, )"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Stage 1\"",
+                "yes"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        }
+      ],
+      "layers": [
+        {
+          "name": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": []
     }
   ],
   "externalEvents": [],
