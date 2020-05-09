@@ -1846,6 +1846,69 @@
         "name": "Default-1-17.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Default-1-20.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Default-1-20.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Default-1-18.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Default-1-18.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Active-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Active-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Default-1-19.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Default-1-19.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Default-1-21.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Default-1-21.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Default-1-22.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Default-1-22.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Default-1-23.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Default-1-23.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1970,6 +2033,10 @@
         {
           "name": "SceneCoins",
           "value": "0"
+        },
+        {
+          "name": "TotalNumberOfGhostsOnScreen",
+          "value": "5"
         }
       ],
       "instances": [
@@ -6167,7 +6234,7 @@
               "parameters": [
                 "NumberOfGhostsOnScreen",
                 "<",
-                "GlobalVariable(TotalNumberOfGhostsOnScreen)"
+                "Variable(TotalNumberOfGhostsOnScreen)"
               ],
               "subInstructions": []
             }
@@ -7031,6 +7098,10 @@
         {
           "name": "SceneCoins",
           "value": "0"
+        },
+        {
+          "name": "TotalNumberOfGhostsOnScreen",
+          "value": "3"
         }
       ],
       "instances": [
@@ -11125,7 +11196,7 @@
               "parameters": [
                 "NumberOfGhostsOnScreen",
                 "<",
-                "GlobalVariable(TotalNumberOfGhostsOnScreen)"
+                "Variable(TotalNumberOfGhostsOnScreen)"
               ],
               "subInstructions": []
             }
@@ -11911,6 +11982,14 @@
               "subInstructions": []
             }
           ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [],
           "events": []
         }
       ],
@@ -12732,7 +12811,7 @@
         "gridWidth": 32,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 0.256
+        "zoomFactor": 0.208
       },
       "objectsGroups": [],
       "variables": [],
@@ -12744,7 +12823,7 @@
           "layer": "",
           "locked": false,
           "name": "BlackScreen",
-          "width": 849,
+          "width": 2586,
           "x": -70,
           "y": -72,
           "zOrder": 1,
@@ -12761,7 +12840,7 @@
           "name": "StageSelectorText",
           "width": 0,
           "x": 88,
-          "y": 16,
+          "y": 11,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -12776,7 +12855,7 @@
           "name": "Stage1Button",
           "width": 0,
           "x": 100,
-          "y": 316,
+          "y": 243,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -12791,7 +12870,7 @@
           "name": "Stage1Icon",
           "width": 494,
           "x": 112,
-          "y": 238,
+          "y": 165,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -12805,8 +12884,8 @@
           "locked": false,
           "name": "Stage2Button",
           "width": 0,
-          "x": 109,
-          "y": 873,
+          "x": 100,
+          "y": 952,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -12820,8 +12899,8 @@
           "locked": false,
           "name": "Stage2Icon",
           "width": 494,
-          "x": 120,
-          "y": 797,
+          "x": 111,
+          "y": 876,
           "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
@@ -12836,7 +12915,7 @@
           "name": "Stage1Text",
           "width": 0,
           "x": 277,
-          "y": 528,
+          "y": 463,
           "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
@@ -12850,9 +12929,204 @@
           "locked": false,
           "name": "Stage2Text",
           "width": 0,
-          "x": 275,
-          "y": 1085,
+          "x": 266,
+          "y": 1172,
           "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "RightArrow",
+          "width": 0,
+          "x": 819,
+          "y": 1482,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 268,
+          "layer": "",
+          "locked": false,
+          "name": "Stage1Icon",
+          "width": 494,
+          "x": 917,
+          "y": 162,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Stage1Button",
+          "width": 0,
+          "x": 905,
+          "y": 240,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Stage1Text",
+          "width": 0,
+          "x": 1082,
+          "y": 460,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 268,
+          "layer": "",
+          "locked": false,
+          "name": "Stage2Icon",
+          "width": 494,
+          "x": 918,
+          "y": 879,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Stage2Button",
+          "width": 0,
+          "x": 907,
+          "y": 955,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Stage2Text",
+          "width": 0,
+          "x": 1073,
+          "y": 1175,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "RightArrow",
+          "width": 0,
+          "x": 1391,
+          "y": 638,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "LeftArrow",
+          "width": 0,
+          "x": 803,
+          "y": 636,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 268,
+          "layer": "",
+          "locked": false,
+          "name": "Stage1Icon",
+          "width": 494,
+          "x": 1697,
+          "y": 163,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Stage1Button",
+          "width": 0,
+          "x": 1685,
+          "y": 241,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Stage1Text",
+          "width": 0,
+          "x": 1862,
+          "y": 461,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "LeftArrow",
+          "width": 0,
+          "x": 1604,
+          "y": 637,
+          "zOrder": 10,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -13139,6 +13413,142 @@
             "g": 203,
             "r": 247
           }
+        },
+        {
+          "name": "LeftArrow",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Default",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Default-1-20.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Active",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Default-1-19.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "RightArrow",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Default",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Default-1-18.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Active",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Active-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -13662,6 +14072,115 @@
                 "Stage1Text",
                 "=",
                 "255"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Code for Scrolling the screen to view more areas",
+          "comment2": ""
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonReleased"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "CollisionPoint"
+              },
+              "parameters": [
+                "RightArrow",
+                "MouseX(\"\", )",
+                "MouseY(\"\", )"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "CameraX"
+              },
+              "parameters": [
+                "",
+                "+",
+                "795",
+                "\"\"",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonReleased"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "CollisionPoint"
+              },
+              "parameters": [
+                "LeftArrow",
+                "MouseX(\"\", )",
+                "MouseY(\"\", )"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "CameraX"
+              },
+              "parameters": [
+                "",
+                "-",
+                "795",
+                "\"\"",
+                ""
               ],
               "subInstructions": []
             }
