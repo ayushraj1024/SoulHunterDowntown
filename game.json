@@ -1945,6 +1945,24 @@
         "name": "Default-1-27.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Pressed-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Pressed-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Pressed-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Pressed-1-0.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -2038,7 +2056,7 @@
     },
     {
       "name": "MaxHealth",
-      "value": "100"
+      "value": "10"
     }
   ],
   "layouts": [
@@ -3970,7 +3988,25 @@
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "acceleration": 1500,
+              "canGrabPlatforms": false,
+              "deceleration": 1500,
+              "gravity": 1000,
+              "ignoreDefaultControls": true,
+              "jumpSpeed": 600,
+              "jumpSustainTime": 0.2,
+              "maxFallingSpeed": 700,
+              "maxSpeed": 250,
+              "name": "PlatformerObject",
+              "roundCoordinates": true,
+              "slopeMaxAngle": 60,
+              "type": "PlatformBehavior::PlatformerObjectBehavior",
+              "xGrabTolerance": 10,
+              "yGrabOffset": 0
+            }
+          ],
           "animations": [
             {
               "name": "Dying",
@@ -7081,25 +7117,25 @@
             {
               "type": {
                 "inverted": false,
-                "value": "Delete"
+                "value": "Create"
               },
               "parameters": [
-                "NinjaGirl",
-                ""
+                "",
+                "NinjaGirlDying",
+                "NinjaGirl.X()",
+                "NinjaGirl.Y()",
+                "\"Spawn Layer\""
               ],
               "subInstructions": []
             },
             {
               "type": {
                 "inverted": false,
-                "value": "Create"
+                "value": "Delete"
               },
               "parameters": [
-                "",
-                "NinjaGirlDying",
-                "GlobalVariable(PlayerX)",
-                "GlobalVariable(PlayerY)",
-                "\"Spawn Layer\""
+                "NinjaGirl",
+                ""
               ],
               "subInstructions": []
             },
@@ -7191,7 +7227,7 @@
                 "",
                 "GameOverText",
                 "GlobalVariable(GameOverTextXPosition)",
-                "SceneWindowHeight()/2",
+                "SceneWindowHeight()/2-320",
                 "\"Spawn Layer\""
               ],
               "subInstructions": []
@@ -7354,7 +7390,7 @@
         "gridWidth": 32,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 0.346
+        "zoomFactor": 0.298
       },
       "objectsGroups": [],
       "variables": [
@@ -9159,7 +9195,25 @@
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "acceleration": 1500,
+              "canGrabPlatforms": false,
+              "deceleration": 1500,
+              "gravity": 1000,
+              "ignoreDefaultControls": true,
+              "jumpSpeed": 600,
+              "jumpSustainTime": 0.2,
+              "maxFallingSpeed": 700,
+              "maxSpeed": 250,
+              "name": "PlatformerObject",
+              "roundCoordinates": true,
+              "slopeMaxAngle": 60,
+              "type": "PlatformBehavior::PlatformerObjectBehavior",
+              "xGrabTolerance": 10,
+              "yGrabOffset": 0
+            }
+          ],
           "animations": [
             {
               "name": "Dying",
@@ -12270,25 +12324,25 @@
             {
               "type": {
                 "inverted": false,
-                "value": "Delete"
+                "value": "Create"
               },
               "parameters": [
-                "NinjaGirl",
-                ""
+                "",
+                "NinjaGirlDying",
+                "NinjaGirl.X()",
+                "NinjaGirl.Y()",
+                "\"Spawn Layer\""
               ],
               "subInstructions": []
             },
             {
               "type": {
                 "inverted": false,
-                "value": "Create"
+                "value": "Delete"
               },
               "parameters": [
-                "",
-                "NinjaGirlDying",
-                "GlobalVariable(PlayerX)",
-                "GlobalVariable(PlayerY)",
-                "\"Spawn Layer\""
+                "NinjaGirl",
+                ""
               ],
               "subInstructions": []
             },
@@ -12380,7 +12434,7 @@
                 "",
                 "GameOverText",
                 "GlobalVariable(GameOverTextXPosition)",
-                "SceneWindowHeight()/2",
+                "SceneWindowHeight()/2-320",
                 "\"Spawn Layer\""
               ],
               "subInstructions": []
@@ -12448,30 +12502,6 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ModVarGlobal"
-              },
-              "parameters": [
-                "Points",
-                "+",
-                "Variable(ScenePoints)"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ModVarGlobal"
-              },
-              "parameters": [
-                "Coins",
-                "+",
-                "Variable(SceneCoins)"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
                 "value": "PushScene"
               },
               "parameters": [
@@ -12489,6 +12519,30 @@
                 "Stage2Unlocked",
                 "=",
                 "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "TempPoints",
+                "=",
+                "Variable(ScenePoints)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "TempCoins",
+                "=",
+                "Variable(SceneCoins)"
               ],
               "subInstructions": []
             }
@@ -13515,8 +13569,8 @@
           "locked": false,
           "name": "RightArrow",
           "width": 0,
-          "x": 819,
-          "y": 1482,
+          "x": 583,
+          "y": 636,
           "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
@@ -13701,6 +13755,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "ExpButton",
+          "width": 0,
+          "x": 1722,
+          "y": 850,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -13732,6 +13801,111 @@
             "g": 203,
             "r": 247
           }
+        },
+        {
+          "name": "ExpButton",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "Button",
+              "type": "ButtonExtension::Button",
+              "HoverAnimation": 1,
+              "IdleAnimation": 0,
+              "PressAnimation": 2
+            }
+          ],
+          "animations": [
+            {
+              "name": "Default",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Default-1-17.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Active",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Default-1-15.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Pressed",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Pressed-1-0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         {
           "name": "Stage2Button",
@@ -14757,6 +14931,35 @@
             }
           ],
           "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ButtonExtension::Button::ButtonFunction"
+              },
+              "parameters": [
+                "ExpButton",
+                "Button",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [],
+          "events": []
         }
       ],
       "layers": [
@@ -14778,7 +14981,12 @@
           "effects": []
         }
       ],
-      "behaviorsSharedData": []
+      "behaviorsSharedData": [
+        {
+          "name": "Button",
+          "type": "ButtonExtension::Button"
+        }
+      ]
     },
     {
       "b": 209,
@@ -15428,7 +15636,485 @@
     }
   ],
   "externalEvents": [],
-  "eventsFunctionsExtensions": [],
+  "eventsFunctionsExtensions": [
+    {
+      "author": "",
+      "description": "",
+      "extensionNamespace": "",
+      "fullName": "",
+      "name": "ButtonExtension",
+      "shortDescription": "",
+      "tags": "",
+      "version": "",
+      "eventsFunctions": [],
+      "eventsBasedBehaviors": [
+        {
+          "description": "Use this behavior for buttons in your game.",
+          "fullName": "Button",
+          "name": "Button",
+          "objectType": "Sprite",
+          "eventsFunctions": [
+            {
+              "description": "Function called when mouse does nothing on the button",
+              "fullName": "Mouse Idle On Button",
+              "functionType": "Action",
+              "name": "MouseIdleFunction",
+              "sentence": "Mouse Idle on _PARAM0_",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "CollisionPoint"
+                      },
+                      "parameters": [
+                        "Object",
+                        "MouseX(\"\", )",
+                        "MouseY(\"\", )"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangeAnimation"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "Object.Behavior::PropertyIdleAnimation()"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "ButtonExtension::Button",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Play an animation when mouse hovers on button",
+              "fullName": "Mouse hover on button",
+              "functionType": "Action",
+              "name": "MouseHoverFunction",
+              "sentence": "Mouse is inside _PARAM0_",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "CollisionPoint"
+                      },
+                      "parameters": [
+                        "Object",
+                        "MouseX(\"\", )",
+                        "MouseY(\"\", )"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangeAnimation"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "Object.Behavior::PropertyHoverAnimation()"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "ButtonExtension::Button",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Play animation when mouse pressed on Button",
+              "fullName": "Mouse pressed on Button",
+              "functionType": "Action",
+              "name": "MousePressedFunction",
+              "sentence": "Mouse pressed on _PARAM0_",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "CollisionPoint"
+                      },
+                      "parameters": [
+                        "Object",
+                        "MouseX(\"\", )",
+                        "MouseY(\"\", )"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SourisBouton"
+                      },
+                      "parameters": [
+                        "",
+                        "Left"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangeAnimation"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "Object.Behavior::PropertyPressAnimation()"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "ButtonExtension::Button",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Initialize button functions on your button sprite",
+              "fullName": "Button Function",
+              "functionType": "Action",
+              "name": "ButtonFunction",
+              "sentence": "Button behavior initialized on _PARAM0_",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "CollisionPoint"
+                      },
+                      "parameters": [
+                        "Object",
+                        "MouseX(\"\", )",
+                        "MouseY(\"\", )"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangeAnimation"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "Object.Behavior::PropertyIdleAnimation()"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "CollisionPoint"
+                      },
+                      "parameters": [
+                        "Object",
+                        "MouseX(\"\", )",
+                        "MouseY(\"\", )"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangeAnimation"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "Object.Behavior::PropertyHoverAnimation()"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "CollisionPoint"
+                      },
+                      "parameters": [
+                        "Object",
+                        "MouseX(\"\", )",
+                        "MouseY(\"\", )"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SourisBouton"
+                      },
+                      "parameters": [
+                        "",
+                        "Left"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangeAnimation"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "Object.Behavior::PropertyPressAnimation()"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "ButtonExtension::Button",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Button has been pressed",
+              "fullName": "Button Pressed",
+              "functionType": "Condition",
+              "name": "ButtonPressedFunction",
+              "sentence": "Button _PARAM0_ was pressed",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "Object",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "MouseButtonReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "Left"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "ButtonExtension::Button",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "propertyDescriptors": [
+            {
+              "value": "0",
+              "type": "Number",
+              "label": "Animation number to be played when player hovers over the button",
+              "description": "",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "HoverAnimation"
+            },
+            {
+              "value": "0",
+              "type": "Number",
+              "label": "Animation number to be played when player does nothing to the button",
+              "description": "",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "IdleAnimation"
+            },
+            {
+              "value": "0",
+              "type": "Number",
+              "label": "Animation number to be played when player presses the button",
+              "description": "",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "PressAnimation"
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "externalLayouts": [],
   "externalSourceFiles": []
 }
