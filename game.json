@@ -2206,6 +2206,24 @@
         "name": "Active-1-4.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Default-1-33.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Default-1-33.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Default-1-34.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Default-1-34.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -2337,7 +2355,7 @@
     },
     {
       "name": "Coins",
-      "value": "0"
+      "value": "1000"
     },
     {
       "name": "AttackPower",
@@ -2430,6 +2448,22 @@
     {
       "name": "AttackSpeedUpgradeIndicatorAnimationNumber",
       "value": "0"
+    },
+    {
+      "name": "Email",
+      "value": "\"\""
+    },
+    {
+      "name": "Username",
+      "value": "\"\""
+    },
+    {
+      "name": "Password",
+      "value": "\"\""
+    },
+    {
+      "name": "ProfilePicture",
+      "value": "\"\""
     }
   ],
   "layouts": [
@@ -13937,10 +13971,12 @@
             {
               "type": {
                 "inverted": false,
-                "value": "Quit"
+                "value": "Scene"
               },
               "parameters": [
-                ""
+                "",
+                "\"Data Saver\"",
+                "yes"
               ],
               "subInstructions": []
             }
@@ -18912,9 +18948,1840 @@
           "type": "ButtonExtension::Button"
         }
       ]
+    },
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "Data_32Loader",
+      "name": "Data Loader",
+      "oglFOV": 90,
+      "oglZFar": 500,
+      "oglZNear": 1,
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": false,
+        "gridB": 255,
+        "gridG": 180,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridR": 158,
+        "gridWidth": 32,
+        "snap": true,
+        "windowMask": false,
+        "zoomFactor": 0.352
+      },
+      "objectsGroups": [],
+      "variables": [
+        {
+          "name": "CanFireBullet",
+          "value": "1"
+        },
+        {
+          "name": "Points",
+          "value": "0"
+        },
+        {
+          "name": "Coins",
+          "value": "1000"
+        },
+        {
+          "name": "AttackPower",
+          "value": "1"
+        },
+        {
+          "name": "GhostSpawnXPosition",
+          "value": "1400"
+        },
+        {
+          "name": "GhostSpawnYPositionOffset",
+          "value": "500"
+        },
+        {
+          "name": "Health",
+          "value": "100"
+        },
+        {
+          "name": "DamageCooldown",
+          "value": "1"
+        },
+        {
+          "name": "CanBeDamaged",
+          "value": "1"
+        },
+        {
+          "name": "PlayerX",
+          "value": "30"
+        },
+        {
+          "name": "PlayerY",
+          "value": "970"
+        },
+        {
+          "name": "HasDied",
+          "value": "0"
+        },
+        {
+          "name": "GameOverTextXPosition",
+          "value": "50"
+        },
+        {
+          "name": "NumberOfGhostsOnScreen",
+          "value": "0"
+        },
+        {
+          "name": "MaximumZOrder",
+          "value": "10"
+        },
+        {
+          "name": "Stage1Unlocked",
+          "value": "1"
+        },
+        {
+          "name": "Stage2Unlocked",
+          "value": "0"
+        },
+        {
+          "name": "TempPoints",
+          "value": "0"
+        },
+        {
+          "name": "TempCoins",
+          "value": "0"
+        },
+        {
+          "name": "MaxHealth",
+          "value": "100"
+        },
+        {
+          "name": "HealthUpgradeCost",
+          "value": "50"
+        },
+        {
+          "name": "DamageUpgradeCost",
+          "value": "50"
+        },
+        {
+          "name": "AttackSpeedUpgradeCost",
+          "value": "50"
+        },
+        {
+          "name": "HealthUpgradeIndicatorAnimationNumber",
+          "value": "0"
+        },
+        {
+          "name": "DamageUpgradeIndicatorAnimationNumber",
+          "value": "0"
+        },
+        {
+          "name": "AttackSpeedUpgradeIndicatorAnimationNumber",
+          "value": "0"
+        },
+        {
+          "name": "TotalNumberOfGhostsOnScreen",
+          "value": "3"
+        },
+        {
+          "name": "BulletFiringCooldown",
+          "value": "0.5"
+        },
+        {
+          "name": "Email",
+          "value": "\"\""
+        },
+        {
+          "name": "Username",
+          "value": "\"\""
+        },
+        {
+          "name": "Password",
+          "value": "\"\""
+        },
+        {
+          "name": "ProfilePicture",
+          "value": "\"\""
+        }
+      ],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 1347,
+          "layer": "",
+          "locked": false,
+          "name": "BlackScreen",
+          "width": 759,
+          "x": -15,
+          "y": -18,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "LoadingText",
+          "width": 0,
+          "x": 73,
+          "y": 1159,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "name": "BlackScreen",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Default",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Default-1-33.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "bold": true,
+          "italic": false,
+          "name": "LoadingText",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Loading Data...",
+          "font": "",
+          "characterSize": 80,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        }
+      ],
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Link",
+              "include": {
+                "includeConfig": 0
+              },
+              "target": "LoadEvent"
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"MainMenu\"",
+                    "yes"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
+        }
+      ],
+      "layers": [
+        {
+          "name": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "Button",
+          "type": "ButtonExtension::Button"
+        }
+      ]
+    },
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "Data_32Saver",
+      "name": "Data Saver",
+      "oglFOV": 90,
+      "oglZFar": 500,
+      "oglZNear": 1,
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": false,
+        "gridB": 255,
+        "gridG": 180,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridR": 158,
+        "gridWidth": 32,
+        "snap": true,
+        "windowMask": false,
+        "zoomFactor": 0.328
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 1334,
+          "layer": "",
+          "locked": false,
+          "name": "BlackScreen",
+          "width": 773,
+          "x": -12,
+          "y": -11,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "SavingText",
+          "width": 0,
+          "x": 113,
+          "y": 1166,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "name": "BlackScreen",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Default",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Default-1-34.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "bold": true,
+          "italic": false,
+          "name": "SavingText",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Saving Data...",
+          "font": "",
+          "characterSize": 80,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        }
+      ],
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Link",
+              "include": {
+                "includeConfig": 0
+              },
+              "target": "SaveEvent"
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Quit"
+                  },
+                  "parameters": [
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
+        }
+      ],
+      "layers": [
+        {
+          "name": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "Button",
+          "type": "ButtonExtension::Button"
+        }
+      ]
     }
   ],
-  "externalEvents": [],
+  "externalEvents": [
+    {
+      "associatedLayout": "Data Saver",
+      "lastChangeTimeStamp": 0,
+      "name": "SaveEvent",
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "LoadFile"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"CanFireBullet\"",
+                "GlobalVariable(CanFireBullet)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"BulletFiringCooldown\"",
+                "GlobalVariable(BulletFiringCooldown)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"TotalNumberOfGhostsOnScreen\"",
+                "GlobalVariable(TotalNumberOfGhostsOnScreen)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"Points\"",
+                "GlobalVariable(Points)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"Coins\"",
+                "GlobalVariable(Coins)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"AttackPower\"",
+                "GlobalVariable(AttackPower)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"GhostSpawnXPosition\"",
+                "GlobalVariable(GhostSpawnXPosition)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"GhostSpawnYPositionOffset\"",
+                "GlobalVariable(GhostSpawnYPositionOffset)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"Health\"",
+                "GlobalVariable(Health)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"DamageCooldown\"",
+                "GlobalVariable(DamageCooldown)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"CanBeDamaged\"",
+                "GlobalVariable(CanBeDamaged)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"PlayerX\"",
+                "GlobalVariable(PlayerX)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"PlayerY\"",
+                "GlobalVariable(PlayerY)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"HasDied\"",
+                "GlobalVariable(HasDied)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"GameOverTextXPosition\"",
+                "GlobalVariable(GameOverTextXPosition)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"NumberOfGhostsOnScreen\"",
+                "GlobalVariable(NumerOfGhostsOnScreen)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"MaximumZOrder\"",
+                "GlobalVariable(MaximumZOrder)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"Stage1Unlocked\"",
+                "GlobalVariable(Stage1Unlocked)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"Stage2Unlocked\"",
+                "GlobalVariable(Stage2Unlocked)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"TempPoints\"",
+                "GlobalVariable(TempPoints)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"TempCoins\"",
+                "GlobalVariable(TempCoins)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"MaxHealth\"",
+                "GlobalVariable(MaxHealth)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"HealthUpgradeCost\"",
+                "GlobalVariable(HealthUpgradeCost)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"DamageUpgradeCost\"",
+                "GlobalVariable(DamageUpgradeCost)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"AttackSpeedUpgradeCost\"",
+                "GlobalVariable(AttackSpeedUpgradeCost)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"HealthUpgradeIndicatorAnimationNumber\"",
+                "GlobalVariable(HealthUpgradeIndicatorAnimationNumber)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"DamageUpgradeIndicatorAnimationNumber\"",
+                "GlobalVariable(DamageUpgradeIndicatorAnimationNumber)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"AttackSpeedUpgradeIndicatorAnimationNumber\"",
+                "GlobalVariable(AttackSpeedUpgradeIndicatorAnimationNumber)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"Email\"",
+                "GlobalVariable(Email)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"Username\"",
+                "GlobalVariable(Username)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"Password\"",
+                "GlobalVariable(Password)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"ProfilePicture\"",
+                "GlobalVariable(ProfilePicture)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "UnloadFile"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        }
+      ]
+    },
+    {
+      "associatedLayout": "Data Loader",
+      "lastChangeTimeStamp": 0,
+      "name": "LoadEvent",
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Below this we are reading the data from the save file and saving it in Scene Variables of Data Loader Scene",
+          "comment2": ""
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "GroupExists"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"Points\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "LoadFile"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "LireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"CanFireBullets\"",
+                "",
+                "CanFireBullet"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "LireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"Points\"",
+                "",
+                "Points"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "LireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"Coins\"",
+                "",
+                "Coins"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "LireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"AttackPower\"",
+                "",
+                "AttackPower"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "LireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"GhostSpawnXPosition\"",
+                "",
+                "GhostSpawnXPosition"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "LireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"GhostSpawnYPositionOffset\"",
+                "",
+                "GhostSpawnYPositionOffset"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "LireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"Health\"",
+                "",
+                "Health"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "LireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"DamageCooldown\"",
+                "",
+                "DamageCooldown"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "LireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"CanBeDamaged\"",
+                "",
+                "CanBeDamaged"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "LireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"PlayerX\"",
+                "",
+                "PlayerX"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "LireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"PlayerY\"",
+                "",
+                "PlayerY"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "LireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"HasDied\"",
+                "",
+                "HasDied"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "LireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"GameOverTextXPosition\"",
+                "",
+                "GameOverTextXPosition"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "LireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"NumberOfGhostsOnScreen\"",
+                "",
+                "NumberOfGhostsOnScreen"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "LireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"MaximumZOrder\"",
+                "",
+                "MaximumZOrder"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "LireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"Stage1Unlocked\"",
+                "",
+                "Stage1Unlocked"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "LireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"Stage2Unlocked\"",
+                "",
+                "Stage2Unlocked"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "LireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"TempPoints\"",
+                "",
+                "TempPoints"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "LireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"TempCoins\"",
+                "",
+                "TempCoins"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "LireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"MaxHealth\"",
+                "",
+                "MaxHealth"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "LireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"HealthUpgradeCost\"",
+                "",
+                "HealthUpgradeCost"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "LireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"DamageUpgradeCost\"",
+                "",
+                "DamageUpgradeCost"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "LireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"AttackSpeedUpgradeCost\"",
+                "",
+                "AttackSpeedUpgradeCost"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "LireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"HealthUpgradeIndicatorAnimationNumber\"",
+                "",
+                "HealthUpgradeIndicatorAnimationNumber"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "LireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"DamageUpgradeIndicatorAnimationNumber\"",
+                "",
+                "DamageUpgradeIndicatorAnimationNumber"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "LireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"AttackSpeedUpgradeIndicatorAnimationNumber\"",
+                "",
+                "AttackSpeedUpgradeIndicatorAnimationNumber"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "LireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"TotalNumberOfGhostsOnScreen\"",
+                "",
+                "TotalNumberOfGhostsOnScreen"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "LireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"BulletFiringCooldown\"",
+                "",
+                "BulletFiringCooldown"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "LireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"Email\"",
+                "",
+                "Email"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "LireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"Username\"",
+                "",
+                "Username"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "LireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"Password\"",
+                "",
+                "Password"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "LireFichierExp"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\"",
+                "\"ProfilePicture\"",
+                "",
+                "ProfilePicture"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "UnloadFile"
+              },
+              "parameters": [
+                "\"SoulHunterSaveFile\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Below this we are assigning the global variables the values read from the save file",
+          "comment2": ""
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "CanFireBullet",
+                "=",
+                "Variable(CanFireBullet)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "BulletFiringCooldown",
+                "=",
+                "Variable(BulletFiringCooldown)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "TotalNumberOfGhostsOnScreen",
+                "=",
+                "Variable(TotalNumberOfGhostsOnScreen)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "Points",
+                "=",
+                "Variable(Points)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "Coins",
+                "=",
+                "Variable(Coins)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "AttackPower",
+                "=",
+                "Variable(AttackPower)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "GhostSpawnXPosition",
+                "=",
+                "Variable(GhostSpawnXPosition)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "GhostSpawnYPositionOffset",
+                "=",
+                "Variable(GhostSpawnYPositionOffset)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "Health",
+                "=",
+                "Variable(Health)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "DamageCooldown",
+                "=",
+                "Variable(DamageCooldown)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "CanBeDamaged",
+                "=",
+                "Variable(CanBeDamaged)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "PlayerX",
+                "=",
+                "Variable(PlayerX)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "PlayerY",
+                "=",
+                "Variable(PlayerY)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "HasDied",
+                "=",
+                "Variable(HasDied)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "GameOverTextXPosition",
+                "=",
+                "Variable(GameOverTextXPosition)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "NumberOfGhostsOnScreen",
+                "=",
+                "Variable(NumberOfGhostsOnScreen)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "MaximumZOrder",
+                "=",
+                "Variable(MaximumZOrder)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "Stage1Unlocked",
+                "=",
+                "Variable(Stage1Unlocked)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "Stage2Unlocked",
+                "=",
+                "Variable(Stage2Unlocked)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "TempPoints",
+                "=",
+                "Variable(TempPoints)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "TempCoins",
+                "=",
+                "Variable(TempCoins)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "MaxHealth",
+                "=",
+                "Variable(MaxHealth)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "HealthUpgradeCost",
+                "=",
+                "Variable(HealthUpgradeCost)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "DamageUpgradeCost",
+                "=",
+                "Variable(DamageUpgradeCost)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "AttackSpeedUpgradeCost",
+                "=",
+                "Variable(AttackSpeedUpgradeCost)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "HealthUpgradeIndicatorAnimationNumber",
+                "=",
+                "Variable(HealthUpgradeIndicatorAnimationNumber)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "DamageUpgradeIndicatorAnimationNumber",
+                "=",
+                "Variable(DamageUpgradeIndicatorAnimationNumber)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "AttackSpeedUpgradeIndicatorAnimationNumber",
+                "=",
+                "Variable(AttackSpeedUpgradeIndicatorAnimationNumber)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "Email",
+                "=",
+                "Variable(Email)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "Username",
+                "=",
+                "Variable(Username)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "Password",
+                "=",
+                "Variable(Password)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "ProfilePicture",
+                "=",
+                "Variable(ProfilePicture)"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        }
+      ]
+    }
+  ],
   "eventsFunctionsExtensions": [
     {
       "author": "",
