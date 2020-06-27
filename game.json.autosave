@@ -2638,6 +2638,24 @@
         "name": "Default-1-77.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "fire_icon.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "fire_icon.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "jump_icon.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "jump_icon.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -3108,7 +3126,7 @@
         "gridWidth": 32,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 0.202
+        "zoomFactor": 0.274
       },
       "objectsGroups": [],
       "variables": [
@@ -3351,6 +3369,36 @@
           "x": 638,
           "y": 28,
           "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "AttackIcon",
+          "width": 0,
+          "x": 548,
+          "y": 954,
+          "zOrder": 18,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "JumpIcon",
+          "width": 0,
+          "x": 547,
+          "y": 1152,
+          "zOrder": 19,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -6870,6 +6918,84 @@
               ]
             }
           ]
+        },
+        {
+          "name": "AttackIcon",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Default",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "fire_icon.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "JumpIcon",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Default",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "jump_icon.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -6993,53 +7119,24 @@
             {
               "type": {
                 "inverted": false,
-                "value": "PopEndedTouch"
+                "value": "MouseButtonReleased"
               },
               "parameters": [
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "PlatformBehavior::SimulateJumpKey"
-              },
-              "parameters": [
-                "NinjaGirl",
-                "PlatformerObject"
+                "",
+                "Left"
               ],
               "subInstructions": []
             },
             {
               "type": {
                 "inverted": false,
-                "value": "SetAnimationName"
+                "value": "SourisSurObjet"
               },
               "parameters": [
-                "NinjaGirl",
-                "\"Jump\""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "MouseButtonReleased"
-              },
-              "parameters": [
+                "JumpIcon",
                 "",
-                "Left"
+                "",
+                ""
               ],
               "subInstructions": []
             }
@@ -7094,27 +7191,6 @@
               "parameters": [
                 "",
                 "Left"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": true,
-                "value": "PopEndedTouch"
-              },
-              "parameters": [
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": true,
-                "value": "MouseButtonReleased"
-              },
-              "parameters": [
-                "",
-                "Right"
               ],
               "subInstructions": []
             },
@@ -7241,7 +7317,7 @@
               },
               "parameters": [
                 "",
-                "Right"
+                "Left"
               ],
               "subInstructions": []
             },
@@ -7265,6 +7341,19 @@
                 "CanFireBullet",
                 "=",
                 "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "AttackIcon",
+                "",
+                "",
+                ""
               ],
               "subInstructions": []
             }
@@ -7346,7 +7435,7 @@
               },
               "parameters": [
                 "",
-                "Right"
+                "Left"
               ],
               "subInstructions": []
             },
@@ -7370,6 +7459,19 @@
                 "CanFireBullet",
                 "=",
                 "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "AttackIcon",
+                "",
+                "",
+                ""
               ],
               "subInstructions": []
             }
@@ -8369,12 +8471,13 @@
             {
               "type": {
                 "inverted": false,
-                "value": "CollisionPoint"
+                "value": "SourisSurObjet"
               },
               "parameters": [
                 "PauseButton",
-                "MouseX(\"\", )",
-                "MouseY(\"\", )"
+                "",
+                "",
+                ""
               ],
               "subInstructions": []
             }
@@ -8483,7 +8586,7 @@
         "gridWidth": 32,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 0.25
+        "zoomFactor": 0.226
       },
       "objectsGroups": [],
       "variables": [
@@ -8730,6 +8833,36 @@
           "x": 639,
           "y": 33,
           "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "AttackIcon",
+          "width": 0,
+          "x": 560,
+          "y": 923,
+          "zOrder": 18,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "JumpIcon",
+          "width": 0,
+          "x": 560,
+          "y": 1128,
+          "zOrder": 19,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -12146,6 +12279,84 @@
               ]
             }
           ]
+        },
+        {
+          "name": "AttackIcon",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Default",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "fire_icon.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "JumpIcon",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Default",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "jump_icon.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -12269,53 +12480,24 @@
             {
               "type": {
                 "inverted": false,
-                "value": "PopEndedTouch"
+                "value": "MouseButtonReleased"
               },
               "parameters": [
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "PlatformBehavior::SimulateJumpKey"
-              },
-              "parameters": [
-                "NinjaGirl",
-                "PlatformerObject"
+                "",
+                "Left"
               ],
               "subInstructions": []
             },
             {
               "type": {
                 "inverted": false,
-                "value": "SetAnimationName"
+                "value": "SourisSurObjet"
               },
               "parameters": [
-                "NinjaGirl",
-                "\"Jump\""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "MouseButtonReleased"
-              },
-              "parameters": [
+                "JumpIcon",
                 "",
-                "Left"
+                "",
+                ""
               ],
               "subInstructions": []
             }
@@ -12370,27 +12552,6 @@
               "parameters": [
                 "",
                 "Left"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": true,
-                "value": "PopEndedTouch"
-              },
-              "parameters": [
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": true,
-                "value": "MouseButtonReleased"
-              },
-              "parameters": [
-                "",
-                "Right"
               ],
               "subInstructions": []
             },
@@ -12517,7 +12678,7 @@
               },
               "parameters": [
                 "",
-                "Right"
+                "Left"
               ],
               "subInstructions": []
             },
@@ -12541,6 +12702,19 @@
                 "CanFireBullet",
                 "=",
                 "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "AttackIcon",
+                "",
+                "",
+                ""
               ],
               "subInstructions": []
             }
@@ -12622,7 +12796,7 @@
               },
               "parameters": [
                 "",
-                "Right"
+                "Left"
               ],
               "subInstructions": []
             },
@@ -12646,6 +12820,19 @@
                 "CanFireBullet",
                 "=",
                 "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "AttackIcon",
+                "",
+                "",
+                ""
               ],
               "subInstructions": []
             }
@@ -13726,12 +13913,13 @@
             {
               "type": {
                 "inverted": false,
-                "value": "CollisionPoint"
+                "value": "SourisSurObjet"
               },
               "parameters": [
                 "PauseButton",
-                "MouseX(\"\", )",
-                "MouseY(\"\", )"
+                "",
+                "",
+                ""
               ],
               "subInstructions": []
             }
@@ -13840,7 +14028,7 @@
         "gridWidth": 32,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 0.28
+        "zoomFactor": 0.232
       },
       "objectsGroups": [],
       "variables": [],
@@ -14081,6 +14269,21 @@
           "x": 97,
           "y": 456,
           "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "SavingText",
+          "width": 0,
+          "x": 106,
+          "y": 1024,
+          "zOrder": 20,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -14560,6 +14763,25 @@
               ]
             }
           ]
+        },
+        {
+          "bold": true,
+          "italic": false,
+          "name": "SavingText",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Saving Game In The Cloud",
+          "font": "",
+          "characterSize": 40,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
         }
       ],
       "events": [
@@ -14567,8 +14789,70 @@
           "disabled": false,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [],
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::Opacity"
+              },
+              "parameters": [
+                "SavingText",
+                "=",
+                "255"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SendRequest"
+              },
+              "parameters": [
+                "\"https://soulhunterdowntown.herokuapp.com\"",
+                "\"/updategamevalues.php\"",
+                "\"username=\"+GlobalVariableString(Username)+\"&password=\"+GlobalVariableString(Password)+\"&points=\"+GlobalVariableString(Points)+\"&coins=\"+GlobalVariableString(Coins)+\"&bulletfiringcooldown=\"+GlobalVariableString(BulletFiringCooldown)+\"&attackpower=\"+GlobalVariableString(AttackPower)+\"&stage1unlocked=\"+GlobalVariableString(Stage1Unlocked)+\"&stage2unlocked=\"+GlobalVariableString(Stage2Unlocked)+\"&maxhealth=\"+GlobalVariableString(MaxHealth)+\"&healthupgradecost=\"+GlobalVariableString(HealthUpgradeCost)+\"&damageupgradecost=\"+GlobalVariableString(DamageUpgradeCost)+\"&attackspeedupgradecost=\"+GlobalVariableString(AttackSpeedUpgradeCost)+\"&healthupgradeindicatoranimationnumber=\"+GlobalVariableString(HealthUpgradeIndicatorAnimationNumber)+\"&damageupgradeindicatoranimationnumber=\"+GlobalVariableString(DamageUpgradeIndicatorAnimationNumber)+\"&attackspeedupgradeindicatoranimationnumber=\"+GlobalVariableString(AttackSpeedUpradeIndicatorAnimationNumber)",
+                "\"POST\"",
+                "",
+                "NextJSONResponseFromServer"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "JSONToVariableStructure"
+              },
+              "parameters": [
+                "VariableString(NextJSONResponseFromServer)",
+                "NextJSONObject"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::Opacity"
+              },
+              "parameters": [
+                "SavingText",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            }
+          ],
           "events": []
         },
         {
@@ -14768,9 +15052,12 @@
             {
               "type": {
                 "inverted": false,
-                "value": "PopEndedTouch"
+                "value": "SourisSurObjet"
               },
               "parameters": [
+                "Start",
+                "",
+                "",
                 ""
               ],
               "subInstructions": []
@@ -14810,9 +15097,12 @@
             {
               "type": {
                 "inverted": false,
-                "value": "PopEndedTouch"
+                "value": "SourisSurObjet"
               },
               "parameters": [
+                "Exit",
+                "",
+                "",
                 ""
               ],
               "subInstructions": []
@@ -14828,6 +15118,65 @@
                 "includeConfig": 0
               },
               "target": "SaveEvent"
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::Opacity"
+                  },
+                  "parameters": [
+                    "SavingText",
+                    "=",
+                    "255"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SendRequest"
+                  },
+                  "parameters": [
+                    "\"https://soulhunterdowntown.herokuapp.com\"",
+                    "\"/updategamevalues.php\"",
+                    "\"username=\"+GlobalVariableString(Username)+\"&password=\"+GlobalVariableString(Password)+\"&points=\"+GlobalVariableString(Points)+\"&coins=\"+GlobalVariableString(Coins)+\"&bulletfiringcooldown=\"+GlobalVariableString(BulletFiringCooldown)+\"&attackpower=\"+GlobalVariableString(AttackPower)+\"&stage1unlocked=\"+GlobalVariableString(Stage1Unlocked)+\"&stage2unlocked=\"+GlobalVariableString(Stage2Unlocked)+\"&maxhealth=\"+GlobalVariableString(MaxHealth)+\"&healthupgradecost=\"+GlobalVariableString(HealthUpgradeCost)+\"&damageupgradecost=\"+GlobalVariableString(DamageUpgradeCost)+\"&attackspeedupgradecost=\"+GlobalVariableString(AttackSpeedUpgradeCost)+\"&healthupgradeindicatoranimationnumber=\"+GlobalVariableString(HealthUpgradeIndicatorAnimationNumber)+\"&damageupgradeindicatoranimationnumber=\"+GlobalVariableString(DamageUpgradeIndicatorAnimationNumber)+\"&attackspeedupgradeindicatoranimationnumber=\"+GlobalVariableString(AttackSpeedUpradeIndicatorAnimationNumber)",
+                    "\"POST\"",
+                    "",
+                    "NextJSONResponseFromServer"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "JSONToVariableStructure"
+                  },
+                  "parameters": [
+                    "VariableString(NextJSONResponseFromServer)",
+                    "NextJSONObject"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::Opacity"
+                  },
+                  "parameters": [
+                    "SavingText",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
             },
             {
               "disabled": false,
@@ -17183,23 +17532,24 @@
             {
               "type": {
                 "inverted": false,
-                "value": "MouseButtonReleased"
+                "value": "SourisSurObjet"
               },
               "parameters": [
+                "ContinueText",
                 "",
-                "Left"
+                "",
+                ""
               ],
               "subInstructions": []
             },
             {
               "type": {
                 "inverted": false,
-                "value": "CollisionPoint"
+                "value": "MouseButtonReleased"
               },
               "parameters": [
-                "ContinueText",
-                "MouseX(\"\", )",
-                "MouseY(\"\", )"
+                "",
+                "Left"
               ],
               "subInstructions": []
             }
@@ -17250,12 +17600,13 @@
             {
               "type": {
                 "inverted": false,
-                "value": "CollisionPoint"
+                "value": "SourisSurObjet"
               },
               "parameters": [
                 "MainMenuText",
-                "MouseX(\"\", )",
-                "MouseY(\"\", )"
+                "",
+                "",
+                ""
               ],
               "subInstructions": []
             },
@@ -20896,14 +21247,24 @@
           "tags": "",
           "type": "TextEntryObject::TextEntry",
           "variables": [],
-          "behaviors": []
+          "behaviors": [
+            {
+              "name": "TextEntryVirtualKeyboard",
+              "type": "TextEntryVirtualKeyboard::TextEntryVirtualKeyboard"
+            }
+          ]
         },
         {
           "name": "UsernameText",
           "tags": "",
           "type": "TextEntryObject::TextEntry",
           "variables": [],
-          "behaviors": []
+          "behaviors": [
+            {
+              "name": "TextEntryVirtualKeyboard",
+              "type": "TextEntryVirtualKeyboard::TextEntryVirtualKeyboard"
+            }
+          ]
         },
         {
           "name": "LoginButton",
@@ -21415,6 +21776,18 @@
                 "255"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextEntryVirtualKeyboard::TextEntryVirtualKeyboard::openKeyboard"
+              },
+              "parameters": [
+                "UsernameText",
+                "TextEntryVirtualKeyboard",
+                ""
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -21470,6 +21843,18 @@
                 "PasswordArrow",
                 "=",
                 "255"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextEntryVirtualKeyboard::TextEntryVirtualKeyboard::openKeyboard"
+              },
+              "parameters": [
+                "PasswordText",
+                "TextEntryVirtualKeyboard",
+                ""
               ],
               "subInstructions": []
             }
@@ -21529,6 +21914,18 @@
                 "0"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextEntryVirtualKeyboard::TextEntryVirtualKeyboard::closeKeyboard"
+              },
+              "parameters": [
+                "UsernameText",
+                "TextEntryVirtualKeyboard",
+                ""
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -21584,6 +21981,18 @@
                 "PasswordArrow",
                 "=",
                 "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextEntryVirtualKeyboard::TextEntryVirtualKeyboard::closeKeyboard"
+              },
+              "parameters": [
+                "PasswordText",
+                "TextEntryVirtualKeyboard",
+                ""
               ],
               "subInstructions": []
             }
@@ -21749,6 +22158,10 @@
         {
           "name": "Button",
           "type": "ButtonExtension::Button"
+        },
+        {
+          "name": "TextEntryVirtualKeyboard",
+          "type": "TextEntryVirtualKeyboard::TextEntryVirtualKeyboard"
         }
       ]
     },
@@ -23927,14 +24340,24 @@
           "tags": "",
           "type": "TextEntryObject::TextEntry",
           "variables": [],
-          "behaviors": []
+          "behaviors": [
+            {
+              "name": "TextEntryVirtualKeyboard",
+              "type": "TextEntryVirtualKeyboard::TextEntryVirtualKeyboard"
+            }
+          ]
         },
         {
           "name": "PasswordTextEntry",
           "tags": "",
           "type": "TextEntryObject::TextEntry",
           "variables": [],
-          "behaviors": []
+          "behaviors": [
+            {
+              "name": "TextEntryVirtualKeyboard",
+              "type": "TextEntryVirtualKeyboard::TextEntryVirtualKeyboard"
+            }
+          ]
         },
         {
           "name": "PasswordArrow",
@@ -24345,6 +24768,18 @@
                 "255"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextEntryVirtualKeyboard::TextEntryVirtualKeyboard::openKeyboard"
+              },
+              "parameters": [
+                "UsernameTextEntry",
+                "TextEntryVirtualKeyboard",
+                ""
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -24400,6 +24835,18 @@
                 "PasswordArrow",
                 "=",
                 "255"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextEntryVirtualKeyboard::TextEntryVirtualKeyboard::openKeyboard"
+              },
+              "parameters": [
+                "PasswordTextEntry",
+                "TextEntryVirtualKeyboard",
+                ""
               ],
               "subInstructions": []
             }
@@ -24459,6 +24906,18 @@
                 "0"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextEntryVirtualKeyboard::TextEntryVirtualKeyboard::closeKeyboard"
+              },
+              "parameters": [
+                "UsernameTextEntry",
+                "TextEntryVirtualKeyboard",
+                ""
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -24514,6 +24973,18 @@
                 "PasswordArrow",
                 "=",
                 "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextEntryVirtualKeyboard::TextEntryVirtualKeyboard::closeKeyboard"
+              },
+              "parameters": [
+                "PasswordTextEntry",
+                "TextEntryVirtualKeyboard",
+                ""
               ],
               "subInstructions": []
             }
@@ -24889,6 +25360,10 @@
         {
           "name": "Button",
           "type": "ButtonExtension::Button"
+        },
+        {
+          "name": "TextEntryVirtualKeyboard",
+          "type": "TextEntryVirtualKeyboard::TextEntryVirtualKeyboard"
         }
       ]
     },
@@ -25787,7 +26262,7 @@
         "gridWidth": 32,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 0.328
+        "zoomFactor": 0.352
       },
       "objectsGroups": [],
       "variables": [],
@@ -26462,14 +26937,24 @@
           "tags": "",
           "type": "TextEntryObject::TextEntry",
           "variables": [],
-          "behaviors": []
+          "behaviors": [
+            {
+              "name": "TextEntryVirtualKeyboard",
+              "type": "TextEntryVirtualKeyboard::TextEntryVirtualKeyboard"
+            }
+          ]
         },
         {
           "name": "UsernameText",
           "tags": "",
           "type": "TextEntryObject::TextEntry",
           "variables": [],
-          "behaviors": []
+          "behaviors": [
+            {
+              "name": "TextEntryVirtualKeyboard",
+              "type": "TextEntryVirtualKeyboard::TextEntryVirtualKeyboard"
+            }
+          ]
         },
         {
           "name": "PasswordResetButton",
@@ -26629,7 +27114,12 @@
           "tags": "",
           "type": "TextEntryObject::TextEntry",
           "variables": [],
-          "behaviors": []
+          "behaviors": [
+            {
+              "name": "TextEntryVirtualKeyboard",
+              "type": "TextEntryVirtualKeyboard::TextEntryVirtualKeyboard"
+            }
+          ]
         }
       ],
       "events": [
@@ -26880,6 +27370,18 @@
                 "255"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextEntryVirtualKeyboard::TextEntryVirtualKeyboard::openKeyboard"
+              },
+              "parameters": [
+                "UsernameText",
+                "TextEntryVirtualKeyboard",
+                ""
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -26937,6 +27439,18 @@
                 "255"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextEntryVirtualKeyboard::TextEntryVirtualKeyboard::openKeyboard"
+              },
+              "parameters": [
+                "PasswordText",
+                "TextEntryVirtualKeyboard",
+                ""
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -26992,6 +27506,18 @@
                 "CodeArrow",
                 "=",
                 "255"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextEntryVirtualKeyboard::TextEntryVirtualKeyboard::openKeyboard"
+              },
+              "parameters": [
+                "CodeText",
+                "TextEntryVirtualKeyboard",
+                ""
               ],
               "subInstructions": []
             }
@@ -27051,6 +27577,18 @@
                 "0"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextEntryVirtualKeyboard::TextEntryVirtualKeyboard::closeKeyboard"
+              },
+              "parameters": [
+                "UsernameText",
+                "TextEntryVirtualKeyboard",
+                ""
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -27108,6 +27646,18 @@
                 "0"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextEntryVirtualKeyboard::TextEntryVirtualKeyboard::closeKeyboard"
+              },
+              "parameters": [
+                "PasswordText",
+                "TextEntryVirtualKeyboard",
+                ""
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -27163,6 +27713,18 @@
                 "CodeArrow",
                 "=",
                 "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextEntryVirtualKeyboard::TextEntryVirtualKeyboard::closeKeyboard"
+              },
+              "parameters": [
+                "CodeText",
+                "TextEntryVirtualKeyboard",
+                ""
               ],
               "subInstructions": []
             }
@@ -27238,6 +27800,10 @@
         {
           "name": "Button",
           "type": "ButtonExtension::Button"
+        },
+        {
+          "name": "TextEntryVirtualKeyboard",
+          "type": "TextEntryVirtualKeyboard::TextEntryVirtualKeyboard"
         }
       ]
     },
@@ -34589,6 +35155,322 @@
     }
   ],
   "eventsFunctionsExtensions": [
+    {
+      "author": "Bouh",
+      "description": "Allow to open and close the virtual keyboard on mobile (iOS, Android). To be used with Text Entry objects.\n\nActions to open and close the keyboard are added. You can then use the Text Entry as usual.",
+      "extensionNamespace": "",
+      "fullName": "Mobile virtual keyboard for Text Entry",
+      "name": "TextEntryVirtualKeyboard",
+      "shortDescription": "Allow to open and close the virtual keyboard on mobile (iOS, Android). To be used with Text Entry objects.",
+      "tags": "javascript, virtual keyboard, mobile",
+      "version": "0.0.1",
+      "eventsFunctions": [
+        {
+          "description": "",
+          "fullName": "",
+          "functionType": "Action",
+          "name": "Function",
+          "sentence": "",
+          "events": [],
+          "parameters": [
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "",
+              "longDescription": "",
+              "name": "",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "sceneName"
+            },
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "",
+              "longDescription": "",
+              "name": "",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "objectList"
+            }
+          ],
+          "objectGroups": []
+        }
+      ],
+      "eventsBasedBehaviors": [
+        {
+          "description": "Allow to open and close the virtual keyboard on mobile (iOS, Android). To be used on Text Entry objects.",
+          "fullName": "Mobile virtual keyboard for Text Entry",
+          "name": "TextEntryVirtualKeyboard",
+          "objectType": "TextEntryObject::TextEntry",
+          "eventsFunctions": [
+            {
+              "description": "",
+              "fullName": "",
+              "functionType": "Action",
+              "name": "onCreated",
+              "sentence": "",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "For each object which have this behavior, we create a HTML input with a unique ID. This ID is stored in the object to allow to retrieve the input later.",
+                  "comment2": ""
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SystemInfo::IsMobile"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::JsCode",
+                      "inlineCode": "gdjs._extensionMobileKeyboard = gdjs._extensionMobileKeyboard || {};\n\nif (typeof document === \"undefined\") {\n    console.error(\"This behavior is only running in a Browser-like environment\");\n    return;\n}\n\n// Select and focus the input associated to the object when opening the keyboard\ngdjs._extensionMobileKeyboard.openKeyboard = function (eventsFunctionContext) {\n    var uniqueID = gdjs._extensionMobileKeyboard.getUniqueIdInObject(eventsFunctionContext);\n    var input = document.getElementById(uniqueID);\n    if (input) {\n        var textEntry = eventsFunctionContext.getObjects(\"Object\")[0];\n        input.value = textEntry.getString();\n        input.style.removeProperty(\"visibility\");\n        input.focus();\n    }\n}\n\n// Blur the input associated to an ID\ngdjs._extensionMobileKeyboard.closeKeyboardById = function (uniqueID) {\n    var input = document.getElementById(uniqueID);\n    if (input) {\n        input.blur();\n        input.style.setProperty(\"visibility\", \"hidden\");\n    }\n}\n\n// Blur the input associated to an object\ngdjs._extensionMobileKeyboard.closeKeyboard = function (eventsFunctionContext) {\n    var uniqueID = gdjs._extensionMobileKeyboard.getUniqueIdInObject(eventsFunctionContext);\n    var input = document.getElementById(uniqueID);\n    if (input) {\n        var textEntry = eventsFunctionContext.getObjects(\"Object\")[0];\n        textEntry.setString(input.value);\n        input.blur();\n        input.style.setProperty(\"visibility\", \"hidden\");\n    }\n}\n\n// Return the id of the current behavior object\ngdjs._extensionMobileKeyboard.getUniqueIdInObject = function (eventsFunctionContext) {\n    var behaviorName = eventsFunctionContext.getBehaviorName(\"Behavior\");\n    return eventsFunctionContext.getObjects(\"Object\")[0]._mobileKeyboardExtensionInput._uniqueId;\n}\n\n// Save an ID inside the object\nvar setUniqueIdInObject = function (id) {\n    var behaviorName = eventsFunctionContext.getBehaviorName(\"Behavior\");\n    eventsFunctionContext.getObjects(\"Object\")[0]._mobileKeyboardExtensionInput = { \"_uniqueId\": id };\n}\n\n// Create an input for the current object\nconst input = document.createElement(\"input\");\ninput.type = \"text\";\ninput.setAttribute(\"spellcheck\", \"false\"); // Disable spell checking (blue line on mobile under words)\ninput.style = \"background-color: transparent;border: 0px;outline: transparent;color: #0000;\";\n\n// Create an identifier that is unique\nvar uniqueId = \"GDevelop_Mobile_Keyboard_Input\" + Date.now() + '-' + Math.floor(Math.random() * 100000);\ninput.id = uniqueId; // Apply it to the input\nsetUniqueIdInObject(uniqueId); // Apply it to the object\n\ndocument.body.appendChild(input); // Add input to the document HTML\n\n// Handle key presses on the input\ninput.addEventListener(\"keyup\", function (event) {\n    input.focus();\n\n    // Force selection to be at the end (to mimic Text Entry)\n    var length_string = input.value.length;\n    input.setSelectionRange(length_string, length_string);\n\n    // Support for removing the last character\n    if (event.keyCode == 8 || event.keyCode == 46) { // 8=Backspace, 46=Del\n        input.value = input.value.slice(0, -1);\n    }\n\n    var textEntry = eventsFunctionContext.getObjects(\"Object\")[0];\n    textEntry.setString(input.value);//Edit textEntry _str value\n\n    if (event.keyCode === 13) { // 13=Enter key \n        //Send id to function for close keyboard\n        if (gdjs._extensionMobileKeyboard.closeKeyboard != undefined) {\n            gdjs._extensionMobileKeyboard.closeKeyboardById(uniqueId);\n        }\n    }\n}, { passive: false });\n",
+                      "parameterObjects": "",
+                      "useStrict": true
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "TextEntryObject::TextEntry",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "TextEntryVirtualKeyboard::TextEntryVirtualKeyboard",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Open mobile keyboard",
+              "fullName": "Open mobile keyboard",
+              "functionType": "Action",
+              "name": "openKeyboard",
+              "sentence": "Open mobile keyboard, and save input in _PARAM0_",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SystemInfo::IsMobile"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::JsCode",
+                      "inlineCode": "gdjs._extensionMobileKeyboard = gdjs._extensionMobileKeyboard || {};\n\nif (gdjs._extensionMobileKeyboard.openKeyboard) { \n    gdjs._extensionMobileKeyboard.openKeyboard(eventsFunctionContext);\n}",
+                      "parameterObjects": "",
+                      "useStrict": true
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "TextEntryObject::TextEntry",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "TextEntryVirtualKeyboard::TextEntryVirtualKeyboard",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Close mobile keyboard",
+              "fullName": "Close mobile keyboard",
+              "functionType": "Action",
+              "name": "closeKeyboard",
+              "sentence": "Close mobile keyboard for _PARAM0_",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SystemInfo::IsMobile"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::JsCode",
+                      "inlineCode": "gdjs._extensionMobileKeyboard = gdjs._extensionMobileKeyboard || {};\r\n\r\nif (gdjs._extensionMobileKeyboard.closeKeyboard) { \r\n    gdjs._extensionMobileKeyboard.closeKeyboard(eventsFunctionContext);\r\n}",
+                      "parameterObjects": "",
+                      "useStrict": true
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "TextEntryObject::TextEntry",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "TextEntryVirtualKeyboard::TextEntryVirtualKeyboard",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "",
+              "fullName": "",
+              "functionType": "Action",
+              "name": "onOwnerRemovedFromScene",
+              "sentence": "",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "When we delete the object with this behavior, we delete the HTML input linked to it",
+                  "comment2": ""
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SystemInfo::IsMobile"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::JsCode",
+                      "inlineCode": "gdjs._extensionMobileKeyboard = gdjs._extensionMobileKeyboard || {};\n\nvar uniqueID = gdjs._extensionMobileKeyboard.getUniqueIdInObject(eventsFunctionContext);\nvar element = document.getElementById(uniqueID);\nif (element) {\n    element.parentNode.removeChild(element);\n}",
+                      "parameterObjects": "",
+                      "useStrict": true
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "TextEntryObject::TextEntry",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "TextEntryVirtualKeyboard::TextEntryVirtualKeyboard",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "propertyDescriptors": []
+        }
+      ]
+    },
     {
       "author": "",
       "description": "",
